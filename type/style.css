@@ -12,6 +12,8 @@ td{
 }
 td:hover{
   color: grey;
+  font-style: italic;
+  font-size: 25px;
 }
 
 td:active{
@@ -93,8 +95,41 @@ body{
   margin: 25px;
   background-color: #BC8451;
   float: left;
+  font-size: 22px;
 }
 
+#line1{
+     font-weight: bold;
+}
+
+#line2{
+      font-weight: lighter;
+}
+
+#line3{
+      font-weight: 300;
+}
+
+#line4{
+      font-weight: 400;
+}
+
+#line5{
+      font-weight: 500;
+}
+
+#line6{
+      font-weight: 600;
+}
+
+#line7{
+      font-size: 21px;
+      font-weight: 800;
+}
+
+#line8{
+      font-weight: 900;
+}
 @media screen and (max-width:720px){
     .container{
         height: 3300px;
