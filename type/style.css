@@ -107,7 +107,6 @@ body{
 }
 
 .box1{
-
   padding: 10px;
   width: 700px;
   height: auto;
@@ -118,6 +117,7 @@ body{
 
 }
 .box2{
+  padding: 10px;
   margin-left: 30px;
   padding: 10px;
   width: 700px;
@@ -350,15 +350,23 @@ body{
   }
 
   #line2{
+    height: auto;
     font-weight: lighter;
     grid-column: col / span 1;
     grid-row: row 2;
   }
+  #linetext2{
+    font-size: 35px;
+  }
 
   #line3{
+    height: 250px;
     font-weight: 300;
     grid-column: col / span 1;
     grid-row: row 3;
+  }
+  #linetext3{
+    font-size: 25px;
   }
 
   #line4{
@@ -366,11 +374,17 @@ body{
     grid-column: col / span 1;
     grid-row: row 4;
   }
+  #linetext4{
+    font-size: 25px;
+  }
 
   #line5{
     font-weight: 500;
     grid-column: col / span 1;
     grid-row: row 5;
+  }
+  #linetext5{
+    font-size: 20px;
   }
 
   #line6{
@@ -378,18 +392,17 @@ body{
     grid-column: col / span 1;
     grid-row: row 6;
   }
-
-  #line7{
-    font-size: 19px;
-    font-weight: 800;
-    grid-column: col / span 1;
-    grid-row: row 7;
+  #linetext6{
+    font-size: 23px;
   }
 
   #line8{
     font-weight: 900;
     grid-column: col / span 1;
     grid-row: row 8;
+  }
+  #linetext8{
+    font-size: 25px;
   }
 
   .box2{
