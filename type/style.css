@@ -25,7 +25,8 @@ td:active{
 }
 body{
   font-family: 'Archivo', sans-serif;
-  background-image: url(background.jpg);
+  background-color: #1e1d1b;
+  background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 54%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -72,9 +73,8 @@ body{
   margin-right: auto;
   margin-left: auto;
   clear: both;
-  border: 10px solid;
+  border: 2px solid;
   border-color: #754C24;
-  margin-bottom: 100px;
 }
 #test{
   padding-top: 10px;
@@ -107,6 +107,7 @@ body{
 }
 
 .box1{
+
   padding: 10px;
   width: 700px;
   height: auto;
@@ -138,6 +139,7 @@ body{
 }
 
 #line1{
+  background-color: #adad0f;
   height: 300px;
   width: 100px;
   font-weight: bold;
@@ -226,28 +228,22 @@ body{
   font-size: 40px;
 }
 #line6{
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
   font-weight: 600;
   grid-column: col 5/ span 2;
   grid-row: row 2;
 }
 
 #linetext6{
-  font-size: 40px;
-}
-#line7{
-  font-size: 19px;
-  font-weight: 800;
-  grid-column: col 6/ span 1;
-  grid-row: row 3;
+  font-size: 50px;
+  font-style: italic;
 }
 
-#linetext7{
-
-}
 #line8{
   background-color: black;
   font-weight: 900;
-  grid-column: col / span 5;
+  grid-column: col 2/ span 4;
   grid-row: row 3;
 }
 
@@ -263,6 +259,31 @@ body{
   animation: flicker 3s linear infinite;
 }
 
+
+.symbol{
+  width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100px;
+  text-align: center;
+  font-size: 40px;
+  animation: rotate 2s linear infinite;
+}
+
+#v1{
+  transform: translate(0,10px);
+}
+#v2{
+  transform: translate(20px,-70px) rotate(90deg);
+}
+#v3{
+  transform: translate(-20px,-167px) rotate(-90deg);
+}
+#v4{
+   transform:translate(0px,-255px) rotate(180deg);
+}
+
+
 @keyframes flicker {
 	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
 		opacity: .99;
@@ -275,6 +296,17 @@ body{
 }
 
 
+@keyframes rotate{
+     0%{
+         transform: rotate(0deg);
+     }
+     50%{
+         transform: rotate(180deg);
+     }
+     100%{
+         transform: rotate(360deg);
+     }
+ }
 
 .center{
   text-align: center;
